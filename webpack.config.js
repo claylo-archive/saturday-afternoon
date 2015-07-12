@@ -6,8 +6,21 @@
  */
 'use strict';
 var webpack = require('webpack');
+var neatPaths = require('node-neat').includePaths;
+var neat;
+neatPaths.forEach(function(p) {
+  neat += '&includePaths[]=' + p;
+});
 
 module.exports = {
+
+  devServer: {
+    contentBase: './src/',
+    hot: true,
+    port: 8080,
+    noInfo: false,
+    https: false,
+  },
 
   output: {
     filename: 'main.js',
@@ -29,6 +42,7 @@ module.exports = {
 
   resolve: {
     extensions: ['', '.js', '.jsx'],
+    modulesDirectories: ['node_modules'],
     alias: {
       'styles': __dirname + '/src/styles',
       'mixins': __dirname + '/src/mixins',
@@ -49,7 +63,7 @@ module.exports = {
       loader: 'react-hot!babel-loader'
     }, {
       test: /\.scss/,
-      loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded'
+      loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded' + neat
     }, {
       test: /\.css$/,
       loader: 'style-loader!css-loader'
