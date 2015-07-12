@@ -61,5 +61,5 @@ I got back to the basics with rendering the iframe by going through [a helpful w
 
 Here are the commits of note, from oldest to latest.
 
- * claylo/saturday-afternoon@c4496725ffd32bc536147c4d8ed504cd45524a0c
- * claylo/saturday-afternoon@13e445a51b2a1af80894e9eb8b594a68bca67f01
+ * c4496725ffd32bc536147c4d8ed504cd45524a0c
+ * 13e445a51b2a1af80894e9eb8b594a68bca67f01
