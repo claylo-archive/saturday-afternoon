@@ -57,9 +57,3 @@ Then I got into the weeds messing around with thoughtbot's [bourbon](http://bour
 
 I got back to the basics with rendering the iframe by going through [a helpful writeup on Zendesk's Dev blog](https://developer.zendesk.com/blog/rendering-to-iframes-in-react) ... which led to leveraging the handy [react-frame-component](https://www.npmjs.com/package/react-frame-component).
 
-### :hourglass: Commits
-
-Here are the commits of note, from oldest to latest.
-
- * c4496725ffd32bc536147c4d8ed504cd45524a0c
- * 13e445a51b2a1af80894e9eb8b594a68bca67f01
