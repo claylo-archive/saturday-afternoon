@@ -54,3 +54,12 @@ The first article is good, but doesn't give much in the way of project layout su
 I then wandered over to the [Yeoman](http://yeoman.io) site to see if I'd find something I'd like that wasn't too heavy (in the way the MEAN generator is heavy), but still had some ways for me to save some time this afternoon. Sure enough, I found the [react-webpack](https://github.com/newtriks/generator-react-webpack) generator for Yeoman. I don't love `grunt`, so I'll be ripping that out.
 
 Then I got into the weeds messing around with thoughtbot's [bourbon](http://bourbon.io) & [neat](http://neat.bourbon.io). I believe there's much hotness to be had there, but I need more practice. For the time being, it was an adventure tweaking webpack to include the correct paths, etc. New tools are fun.
+
+I got back to the basics with rendering the iframe by going through [a helpful writeup on Zendesk's Dev blog](https://developer.zendesk.com/blog/rendering-to-iframes-in-react) ... which led to leveraging the handy [react-frame-component](https://www.npmjs.com/package/react-frame-component).
+
+### :hourglass: Commits
+
+Here are the commits of note, from oldest to latest.
+
+ * claylo/saturday-afternoon@c4496725ffd32bc536147c4d8ed504cd45524a0c
+ * claylo/saturday-afternoon@13e445a51b2a1af80894e9eb8b594a68bca67f01
