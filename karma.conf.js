@@ -1,17 +1,23 @@
 'use strict';
 
 var path = require('path');
+var neatPaths = require('node-neat').includePaths;
+var neat;
+neatPaths.forEach(function(p) {
+  neat += '&includePaths[]=' + p;
+});
 
-module.exports = function (config) {
+
+module.exports = function(config) {
   config.set({
     basePath: '',
     frameworks: ['jasmine'],
     files: [
       'test/helpers/pack/**/*.js',
       'test/helpers/react/**/*.js',
-      'test/spec/components/**/*.js',
-      'test/spec/stores/**/*.js',
-      'test/spec/actions/**/*.js'
+      'test/spec/components/**/*.js'
+      //'test/spec/stores/**/*.js',
+      //'test/spec/actions/**/*.js'
     ],
     preprocessors: {
       'test/helpers/createComponent.js': ['webpack'],
@@ -38,7 +44,7 @@ module.exports = function (config) {
           exclude: /node_modules/
         }, {
           test: /\.scss/,
-          loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded'
+          loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded' + neat
         }, {
           test: /\.css$/,
           loader: 'style-loader!css-loader'

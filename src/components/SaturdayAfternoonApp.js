@@ -13,7 +13,7 @@ var imageURL = require('file!../img/hello.gif');
 var SaturdayAfternoonApp = React.createClass({
   render: function() {
     return (
-      <Frame>
+      <Frame id="encapsulated">
       <div className="main">
         <ReactTransitionGroup transitionName="fade">
           <HelloPic greeting="Hello." />

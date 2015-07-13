@@ -1,6 +1,6 @@
 {
   "name": "saturday-afternoon",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "Kicking the tires with react.js, webpack and so on.",
   "repository": {
     "type": "git",
@@ -27,13 +27,6 @@
     "eslint": "^0.21.2",
     "eslint-loader": "^0.11.2",
     "eslint-plugin-react": "^2.4.0",
-    "grunt": "~0.4.5",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-connect": "~0.8.0",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-karma": "~0.8.3",
-    "grunt-open": "~0.2.3",
-    "grunt-webpack": "~1.0.8",
     "jasmine-core": "^2.3.4",
     "karma": "~0.12.21",
     "karma-jasmine": "^0.3.5",
@@ -53,6 +46,6 @@
   },
   "scripts": {
     "local": "webpack-dev-server",
-    "test": "jasmine"
+    "test": "karma start"
   }
 }

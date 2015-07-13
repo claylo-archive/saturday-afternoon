@@ -31,8 +31,8 @@ $ npm run local
 - [X] Use `webpack`
  - [X] For bundle creation
  - [X] For hot code reload
-- [ ] Test the above functionality
- - [ ] Test with `jasmine` and `karma-runner`
+- [X] Test the above functionality
+ - [X] Test with `jasmine` and `karma-runner`
 
 ## 🌟Super-bonus Objectives
 
@@ -40,13 +40,15 @@ $ npm run local
 - [ ] Continuous Integration
 - [ ] Continuous Deployment
 
+Alas, the weekend was too short.
+
 ## :notes: Here's a story... :notes:
 
 I began the afternoon comfortable with [node.js](http://nodejs.org), practically acquainted with [react.js](https://facebook.github.io/react/index.html), conceptually acquainted with [flux](https://facebook.github.io/flux/docs/overview.html), aware of [karma](http://karma-runner.github.io/), and unfamiliar with [webpack](https://www.npmjs.com/package/webpack).
 
 My first task was to get comfortable with a "proper" react.js-based project layout. I read through these articles:
 
- * [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html){:target="_blank"}
+ * [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
  * [The React.js Way: Getting Started Tutorial](http://blog.risingstack.com/the-react-way-getting-started-tutorial/)
 
 The first article is good, but doesn't give much in the way of project layout suggestions. The React.js Way offered a project layout suggestion, but as I was going through the manual steps of setting that up, I found it didn't feel natural to me. I could get used to it, but I didn't love it.
@@ -57,3 +59,4 @@ Then I got into the weeds messing around with thoughtbot's [bourbon](http://bour
 
 I got back to the basics with rendering the iframe by going through [a helpful writeup on Zendesk's Dev blog](https://developer.zendesk.com/blog/rendering-to-iframes-in-react) ... which led to leveraging the handy [react-frame-component](https://www.npmjs.com/package/react-frame-component).
 
+Defying the very name of this project, I continued work on Sunday evening toward the test-related goals. As a novice testing React's virtual DOM, I'm not sure I wrote tests in the appropriate React Way. Still, there are some tests. 😏
